@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+    <!-- header -->
+    <header class="w-full sticky top-0 left-0 flex justify-between items-center p-4 bg-[#4d1364] text-white animate-fade-in shadow-md border-b border-[crimson] z-50">
+        <h1 class="text-xl md:text-2xl font-bold flex items-center gap-2">
+            <span><img src="../image/logo.png" alt="logo" width="40" class="w-8 h-8 md:w-10 md:h-10"></span>
+            Auth<span class="crimson">Secure</span>
+        </h1>
+        <!-- Navbar -->
+        <nav class="hidden sm:flex">
+            <ul class="flex gap-4 text-sm md:text-lg">
+                <li class="nav-link hover:text-blue-300 transition"><a href="#">Home</a></li>
+                <li class="nav-link hover:text-blue-300 transition"><a href="#">Features</a></li>
+                <li class="nav-link hover:text-blue-300 transition"><a href="#">Pricing</a></li>
+                <li class="nav-link hover:text-blue-300 transition"><a href="#">Contact</a></li>
+                <li class="nav-link hover:text-blue-300 transition"> <a href="./profile-settings.html">Profile</a></li>
+            </ul>
+        </nav>
+        <button class="text-xl md:text-2xl sm:hidden"><a href="#"><i class="fa-solid fa-bars"></i></a></button>
+    </header>
+
+    <main class="flex-1">
+        <section class="w-full flex flex-col md:flex-row items-center">
+            <!-- Left Side Image -->
+            <div class="bg-[url('../image/sing-up-section.avif')] w-full md:w-1/2 h-64 sm:h-96 md:h-screen bg-cover bg-no-repeat bg-left animate-fade-in  md:rounded-br-[80%]"></div>
+
+            <!-- Right Side Form -->
+            <div class="h-auto pt-40 md:h-screen w-full md:w-1/2 flex justify-center items-center px-4 sm:px-6 lg:px-12 animate-fade-in">
+                <form action="./login.html" method="post" class="bg-gray-950 py-8 px-5 sm:px-7 rounded-2xl border border-gray-700 w-full max-w-md">
+                    <fieldset class="border-[crimson] border-2 flex flex-col justify-center items-center rounded-2xl py-10 px-3 sm:px-5 gap-5">
+                        <legend class="text-xl sm:text-2xl font-bold text-white">SIGN UP</legend>
+
+                        <label for="first-name" class="text-white w-full text-sm sm:text-base">
+                            First Name
+                            <input id="first-name" class="border-[crimson] border-2 px-2 py-2 bg-[#0f172a] mt-1 rounded-xl w-full" type="text" placeholder="First Name" required>
+                        </label>
+
+                        <label for="last-name" class="text-white w-full text-sm sm:text-base">
+                            Last Name
+                            <input id="last-name" class="border-[crimson] border-2 px-2 py-2 bg-[#0f172a] mt-1 rounded-xl w-full" type="text" placeholder="Last Name" required>
+                        </label>
+
+                        <label for="email" class="text-white w-full text-sm sm:text-base">
+                            Email or Phone
+                            <input id="email" class="border-[crimson] border-2 px-2 py-2 bg-[#0f172a] mt-1 rounded-xl w-full" type="text" placeholder="Email or Phone" required>
+                        </label>
+
+                        <label for="password" class="text-white w-full text-sm sm:text-base">
+                            Password
+                            <input id="password" class="border-[crimson] border-2 px-2 py-2 bg-[#0f172a] mt-1 rounded-xl w-full" type="password" placeholder="Password" required>
+                        </label>
+
+                        <label for="confirm-password" class="text-white w-full text-sm sm:text-base">
+                            Confirm Password
+                            <input id="confirm-password" class="border-[crimson] border-2 px-2 py-2 bg-[#0f172a] mt-1 rounded-xl w-full" type="password" placeholder="Confirm Password" required>
+                        </label>
+
+                         <input class="bg-[crimson] py-2 px-7 text-white rounded-2xl animate-bounce" type="submit" value="Sing up">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[crimson] mt-40 text-white text-center p-6 animate-fade-in">
+        <p class="mb-2 text-sm sm:text-base">&copy; 2025 AuthSecure. All rights reserved.</p>
+        <p class="max-w-2xl mx-auto text-xs sm:text-sm text-white">
+            AuthSecure empowers your applications with robust security measures. From basic authentication to
+            enterprise-grade identity management, our platform is designed for developers who care about performance,
+            reliability, and compliance. Protect your users, scale effortlessly, and build with confidence.
+        </p>
+        <div class="mt-4">
+            <a href="#" class="hover:text-purple-950 mx-2 text-xs sm:text-sm">Privacy</a>
+            <a href="#" class="hover:text-purple-950 mx-2 text-xs sm:text-sm">Terms</a>
+            <a href="#" class="hover:text-purple-950 mx-2 text-xs sm:text-sm">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>

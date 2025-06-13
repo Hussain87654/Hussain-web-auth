@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+  header{
+     background: linear-gradient(-45deg, #0f172a, #4d1364, #0f172a, #4d1364);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+  }
+
+    body {
+      background: linear-gradient(-45deg, #0f172a, #4d1364, #0f172a, #4d1364);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      color: #f8fafc;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .crimson {
+      color: crimson;
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .animate-infinite-bounce {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .nav-link {
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: crimson;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      transform: scaleX(1);
+    }
+    
+body {
+  --sb-track-color: #232E33;
+  --sb-thumb-color: #0f172a;
+  --sb-size: 8px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 8px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+.chartbackground{
+  background: linear-gradient(45deg, #091122, #16061d, #091122, #15011d);
+      background-size: 400% 400%;
+      animation: gradientBG 6s ease infinite;
+}

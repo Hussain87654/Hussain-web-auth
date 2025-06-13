@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Landing Page</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="min-h-screen flex flex-col font-sans">
+    <!-- header -->
+    <header class="w-full fixed top-0 left-0 z-50 flex justify-between items-center p-4 bg-[#4d1364] text-white animate-fade-in shadow-md border-b-1 border-[crimson]">
+        <h1 class="text-2xl font-bold flex items-center"><span><img src="../image/logo.png" alt="logo"
+                    width="40"></span>Auth<span class="crimson">Secure</span></h1>
+        <!-- Navbar -->
+        <nav class="hidden sm:flex">
+            <ul class="flex gap-4 text-lg ">
+                <li class="nav-link hover:text-blue-300 transition"> <a href="#">Home</a></li>
+                <li class="nav-link hover:text-blue-300 transition"> <a href="#">Features</a></li>
+                <li class="nav-link hover:text-blue-300 transition"> <a href="#">Pricing</a></li>
+                <li class="nav-link hover:text-blue-300 transition"> <a href="#">Contact</a></li>
+                <li class="nav-link hover:text-blue-300 transition"> <a href="./profile-settings.html">Profile</a></li>
+            </ul>
+        </nav>
+        <button class="text-2xl sm:hidden"><a href="#"><i class="fa-solid fa-bars"></i></a></button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="flex flex-col w-full h-[95%] items-center justify-center text-center px-6 py-32 animate-fade-in ">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4 text-white"><span class="crimson">S</span>ecure <span class="crimson">Y</span>our <span class="crimson">W</span>eb <span class="crimson">I</span>dentity</h2>
+            <p class="text-lg md:text-xl mb-6 text-gray-300">Authenticate users safely and efficiently with our
+                platform.</p>
+            <button
+                class="bg-[crimson] hover:bg-[#b4092b] text-white font-bold py-3 px-6 rounded-xl shadow-lg transition animate-infinite-bounce"><a href="./login.html">Get
+                Started</a></button>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 md:p-12 animate-fade-in">
+            <div class="bg-gray-900 hover:border-2 border-[crimson] border-1  p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-500 animate-fade-in">
+                <h3 class="text-2xl font-bold text-[crimson] mb-4">Free</h3>
+                <ul class="text-gray-300 mb-4 space-y-1 text-sm">
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Basic Authentication system</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Email verification support</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Access control features</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Login/logout functionality</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Basic session management</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Minimal user dashboard</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Community support</li>
+                    <li><span class="text-red-700 mr-1"><i class="fa-regular fa-circle-xmark"></i></span> No 2FA</li>
+                    <li><span class="text-red-700 mr-1"><i class="fa-regular fa-circle-xmark"></i></span> No OAuth support</li>
+                    <li><span class="text-red-700 mr-1"><i class="fa-regular fa-circle-xmark"></i></span> No custom domain</li>
+                </ul>
+                <button class="bg-[crimson] hover:bg-red-600 text-white py-2 px-4 rounded">Select</button>
+            </div>
+
+            <div class="bg-gray-900 hover:border-2 p-6 border-[crimson] border-1 rounded-2xl shadow-lg hover:scale-105 transition duration-500 animate-fade-in">
+                <h3 class="text-2xl font-bold text-[crimson] mb-4">Premium</h3>
+                <ul class="text-gray-300 mb-4 space-y-1 text-sm">
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Everything in Free plan</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Two-Factor Authentication</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> OAuth Provider integrations</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Role-based access</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> API access support</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Enhanced session security</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Priority email support</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Activity monitoring</li>
+                    <li><span class="text-red-700 mr-1"><i class="fa-regular fa-circle-xmark"></i></span> Enterprise SLA</li>
+                    <li><span class="text-red-700 mr-1"><i class="fa-regular fa-circle-xmark"></i></span> Dedicated account manager</li>
+                </ul>
+                <button class="bg-[crimson] hover:bg-red-600 text-white py-2 px-4 rounded">Select</button>
+            </div>
+
+            <div class="bg-gray-900 hover:border-2 p-6 border-[crimson] border-1 rounded-2xl shadow-lg hover:scale-105 transition duration-500 animate-fade-in">
+                <h3 class="text-2xl font-bold text-[crimson] mb-4">Pro</h3>
+                <ul class="text-gray-300 mb-4 space-y-1 text-sm">
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Everything in Premium plan</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Enterprise-grade infrastructure</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Custom branding options</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Unlimited API usage</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Dedicated account manager</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Premium SLA support</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Advanced analytics</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Single Sign-On (SSO)</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Team collaboration features</li>
+                    <li><span class="text-green-700 mr-1"><i class="fa-regular fa-circle-check"></i></span> Early access to new features</li>
+                </ul>
+                <button class="bg-[crimson] hover:bg-red-600 text-white py-2 px-4 rounded">Select</button>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="text-center px-6 py-16 animate-fade-in">
+            <h3 class="text-3xl font-bold mb-4 text-[crimson]">Why Choose Us?</h3>
+            <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+                We provide the most secure and scalable authentication solution for your apps and services. Our team
+                ensures top-notch performance, data safety, and seamless integration with modern tech stacks.
+            </p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[crimson] text-white text-center p-6 animate-fade-in">
+        <p class="mb-2">&copy; 2025 AuthSecure. All rights reserved.</p>
+        <p class="max-w-2xl mx-auto text-sm text-white">
+            AuthSecure empowers your applications with robust security measures. From basic authentication to
+            enterprise-grade identity management, our platform is designed for developers who care about performance,
+            reliability, and compliance. Protect your users, scale effortlessly, and build with confidence.
+        </p>
+        <div class="mt-4">
+            <a href="#" class="hover:text-purple-950 mx-2">Privacy</a>
+            <a href="#" class="hover:text-purple-950 mx-2">Terms</a>
+            <a href="#" class="hover:text-purple-950 mx-2">Contact</a>
+        </div>
+    </footer>
+</body>
+
+</html>
